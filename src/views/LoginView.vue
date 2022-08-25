@@ -27,6 +27,7 @@
   </div>
 </template>
 
+
 <script lang="ts">
 import {defineComponent, reactive, toRefs} from "vue";
 import {Login} from "@/type/login";
