@@ -12,7 +12,6 @@
         <i class="el-icon-menu"></i>
         <span>{{item.meta.title}}</span>
       </el-menu-item>
-
     </el-menu>
   </el-col>
   </el-row>
