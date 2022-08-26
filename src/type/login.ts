@@ -1,10 +1,14 @@
-export interface ruleFormInt{
-    username:string,
-    password:string
+/**
+ * 表单数据接口
+ */
+export interface LoginDataInt{
+    username: string
+    password: string
 }
-export class Login {
-    ruleForm:ruleFormInt={
-        username:'',
-        password:'',
+
+export class LoginData{
+    ruleForm: LoginDataInt = {
+        username: "admin",
+        password: "12345"
     }
 }

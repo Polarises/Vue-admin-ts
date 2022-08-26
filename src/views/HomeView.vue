@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="common-layout">
+    <TopNavBar/>
+
+    <div class="main-container">
+      <LeftSideBar/>
+<!--      <div style="flex: 1;">-->
+<!--        11-->
+<!--        <router-view></router-view>-->
+<!--      </div>-->
+    </div>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+<script lang="ts" setup>
+import TopNavBar from "@/components/TopNavBar.vue";
+import LeftSideBar from "@/components/LeftSideBar.vue";
 
-export default defineComponent({
-  name: 'HomeView',
-  components: {
-    HelloWorld,
-  },
-});
 </script>
+
+<style lang="scss">
+.main-container{
+  display: flex;
+}
+.el-menu{
+  border-bottom: 0 !important;
+}
+</style>
